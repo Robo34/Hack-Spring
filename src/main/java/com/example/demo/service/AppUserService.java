@@ -23,6 +23,6 @@ public class AppUserService {
 	}
 	
 	public AppUser getName(String userName) {
-		return repository.findByName(userName);
+		return repository.findFirstByName(userName);
 	}
 }
